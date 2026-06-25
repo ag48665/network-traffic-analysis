@@ -15,6 +15,7 @@ Objectives
 Lab Environment
 Network Topology
 Tools Used
+Technologies
 Methodology
 Analysis (12 sekcji ze screenshotami i opisami)
 Key Findings
@@ -90,6 +91,16 @@ The packet capture was performed on a Windows 11 workstation connected to a home
 | IPv4 | Network layer protocol analysis |
 | UDP | Transport layer protocol analysis |
 | Ethernet II | Data Link layer frame analysis |
+
+---
+## Technologies
+
+- DNS
+- IPv4
+- UDP
+- Ethernet II
+- Packet Capture
+- Network Traffic Analysis
 
 ---
 
@@ -445,10 +456,22 @@ This project is intended for educational purposes only.
 
 ## Author
 
-Agata Gabara
+**Agata Gabara**
 
-GitHub: https://github.com/ag48665
+Cybersecurity Portfolio
 
-This project was created as part of my cybersecurity portfolio while developing practical skills in Network Security and Security Operations (SOC).
+GitHub:
+https://github.com/ag48665
 
+Current focus:
 
+- SOC Analysis
+- Network Security
+- Blue Team
+- Digital Forensics
+
+---
+
+⭐ Thank you for visiting this repository.
+
+This project is part of my cybersecurity portfolio and documents practical experience in network traffic analysis using Wireshark.
