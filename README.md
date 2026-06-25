@@ -106,6 +106,7 @@ The analysis followed the following workflow:
 7. Document observations.
 
 ---
+
 ## Analysis
 
 ## 1. DNS Traffic Filtering
@@ -365,6 +366,17 @@ DNS flags are essential for understanding how a DNS query was handled. They reve
 ![DNS Flags](screenshots/12_dns_flags.png)
 
 ---
+
+## Key Findings
+
+The analysis confirmed normal DNS communication between the local workstation and the Cloudflare public DNS resolver.
+
+No suspicious traffic, protocol anomalies, or unexpected communication patterns were identified during the capture.
+
+The captured traffic demonstrates the complete DNS resolution process, including query generation, response processing, endpoint communication, and protocol encapsulation across the Ethernet, IPv4, UDP, and DNS layers.
+
+---
+
 ## MITRE ATT&CK Relevance
 
 Although this project analyzes legitimate DNS traffic, the same analysis techniques are commonly used to investigate:
