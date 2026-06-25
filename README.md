@@ -2,6 +2,10 @@
 
 > Hands-on network traffic analysis project demonstrating packet inspection, DNS analysis, protocol hierarchy evaluation, and network communication investigation using Wireshark.
 
+![Wireshark](https://img.shields.io/badge/Wireshark-Network%20Analysis-blue)
+![GitHub](https://img.shields.io/badge/GitHub-Portfolio-black)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 ---
 
 ## 📑 Table of Contents
@@ -343,3 +347,16 @@ Future projects will focus on:
 - Network forensics
 
 ---
+
+## Author
+
+**Agata Gabara**
+
+GitHub: https://github.com/ag48665
+Email: agatagabara@gmail.com
+
+---
+
+## License
+
+This project is intended for educational purposes only.
