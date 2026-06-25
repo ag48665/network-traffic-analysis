@@ -15,6 +15,8 @@
 - Skills Demonstrated
 - Future Improvements
 
+---
+
               Internet
                   │
                   │
@@ -33,6 +35,7 @@
         +------------------+
 
 ---
+
 ## 1. DNS Traffic Filtering
 
 The `dns` display filter was applied to isolate Domain Name System (DNS) traffic from the complete packet capture. This allows the analysis to focus exclusively on DNS queries and responses while excluding unrelated network traffic.
