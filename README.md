@@ -109,7 +109,7 @@ Endpoint analysis helps identify which devices participate in network communicat
 - Traffic was exchanged in both directions, confirming normal DNS communication.
 - No unexpected or unknown IPv4 endpoints were detected in the filtered capture.
 
-![IPv4 Endpoints](screenshots/03_ipv4_endpoints.png)
+![IPv4 Conversations](screenshots/04_ipv4_conversations.png)
 
 ## 4. IPv4 Conversations
 
