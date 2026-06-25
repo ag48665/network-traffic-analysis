@@ -1,10 +1,12 @@
 # 🌐 Network Traffic Analysis with Wireshark
 
-> Hands-on network traffic analysis project demonstrating packet inspection, DNS analysis, protocol hierarchy evaluation, and network communication investigation using Wireshark.
+> A hands-on network traffic analysis project demonstrating packet inspection, DNS analysis, protocol hierarchy evaluation, and packet-level investigation using Wireshark.
 
 ![Wireshark](https://img.shields.io/badge/Wireshark-Network%20Analysis-blue)
 ![GitHub](https://img.shields.io/badge/GitHub-Portfolio-black)
 ![License](https://img.shields.io/badge/License-MIT-green)
+
+
 
 ---
 
@@ -298,6 +300,20 @@ DNS flags are essential for understanding how a DNS query was handled. They reve
 
 ---
 
+## Skills Demonstrated
+
+- Network Traffic Analysis
+- Packet Inspection
+- DNS Analysis
+- IPv4
+- UDP
+- Ethernet II
+- Wireshark
+- Network Troubleshooting
+- Technical Documentation
+
+---
+
 ## 🔬 Methodology
 
 The analysis followed the following workflow:
@@ -309,6 +325,17 @@ The analysis followed the following workflow:
 5. Inspect packet headers.
 6. Analyze DNS queries and responses.
 7. Document observations.
+
+---
+## MITRE ATT&CK Relevance
+
+Although this project analyzes legitimate DNS traffic, the same analysis techniques are commonly used to investigate:
+
+- T1071 – Application Layer Protocol
+- T1046 – Network Service Discovery
+- T1018 – Remote System Discovery
+
+Understanding normal network behavior is essential for detecting malicious activity.
 
 ---
 
@@ -336,24 +363,34 @@ During this project I learned how to:
 
 ---
 
-## Future Improvements
+## Future Work
 
-Future projects will focus on:
+Future projects will include:
 
-- Malware PCAP analysis
-- HTTP/HTTPS traffic analysis
-- DNS tunneling detection
-- Command and Control (C2) traffic investigation
-- Network forensics
+- Malware PCAP Analysis
+- HTTP and HTTPS Traffic Analysis
+- DNS Tunneling Detection
+- Command and Control (C2) Traffic Investigation
+- Network Forensics
+
+---
+## References
+
+- Wireshark Documentation
+- RFC 1035 – Domain Names
+- RFC 768 – UDP
+- RFC 791 – IPv4
+
+---
+## Author
+
+Agata Gabara
+
+GitHub: https://github.com/ag48665
 
 ---
 
-## Author
-
-**Agata Gabara**
-
-GitHub: https://github.com/ag48665
-Email: agatagabara@gmail.com
+This project was created as part of my cybersecurity portfolio while developing practical skills in Network Security and Security Operations (SOC).
 
 ---
 
