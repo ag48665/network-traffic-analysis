@@ -374,6 +374,7 @@ Future projects will include:
 - Network Forensics
 
 ---
+
 ## References
 
 - Wireshark Documentation
@@ -382,18 +383,19 @@ Future projects will include:
 - RFC 791 – IPv4
 
 ---
+
+## License
+
+This project is intended for educational purposes only.
+
+---
+
 ## Author
 
 Agata Gabara
 
 GitHub: https://github.com/ag48665
 
----
-
 This project was created as part of my cybersecurity portfolio while developing practical skills in Network Security and Security Operations (SOC).
 
----
 
-## License
-
-This project is intended for educational purposes only.
