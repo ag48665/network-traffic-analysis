@@ -6,41 +6,107 @@
 ![GitHub](https://img.shields.io/badge/GitHub-Portfolio-black)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-
-
 ---
 
 ## 📑 Table of Contents
 
-- Overview
-- Lab Environment
-- Objectives
-- Methodology
-- Analysis
-- Findings
-- Skills Demonstrated
-- Future Improvements
+Overview
+Objectives
+Lab Environment
+Network Topology
+Tools Used
+Methodology
+Analysis (12 sekcji ze screenshotami i opisami)
+Key Findings
+MITRE ATT&CK Relevance
+Skills Demonstrated
+Lessons Learned
+Future Work
+References
+License
+Author
+
+---
+## Overview
+
+This project demonstrates the analysis of DNS traffic captured with Wireshark.
+
+The objective was to inspect packet-level communication, identify participating hosts, analyze DNS queries and responses, and understand protocol encapsulation across the network stack.
+
+The analysis focuses on legitimate DNS communication between a Windows workstation and the Cloudflare public DNS resolver (1.1.1.1).
+
+---
+## Objectives
+
+- Capture live DNS traffic
+- Filter DNS packets
+- Analyze protocol hierarchy
+- Identify communication endpoints
+- Inspect Ethernet, IPv4 and UDP headers
+- Analyze DNS queries and responses
+- Document the complete investigation
+
+---
+## Lab Environment
+
+| Component | Value |
+|-----------|-------|
+| Operating System | Windows 11 |
+| Analysis Tool | Wireshark 4.6.6 |
+| Network | Home Wi-Fi |
+| DNS Resolver | Cloudflare (1.1.1.1) |
+| Protocols | Ethernet II, IPv4, UDP, DNS |
 
 ---
 
-              Internet
-                  │
-                  │
-        +------------------+
-        | Cloudflare DNS   |
-        |    1.1.1.1       |
-        +------------------+
-                  │
-                  │
-          Home Wi-Fi Router
-                  │
-                  │
-        +------------------+
-        | Windows 11 PC    |
-        | Wireshark 4.6.6  |
-        +------------------+
+## Network Topology
+
+The packet capture was performed on a Windows 11 workstation connected to a home Wi-Fi network. DNS requests generated during normal web browsing were forwarded through the home router to the Cloudflare public DNS resolver (`1.1.1.1`), and the responses were analyzed using Wireshark.
+
+```text
+                Internet
+                    │
+                    ▼
+         Cloudflare DNS (1.1.1.1)
+                    │
+                    ▼
+            Home Wi-Fi Router
+                    │
+                    ▼
+        Windows 11 Workstation
+            Wireshark 4.6.6
+```
+---
+
+## Tools Used
+
+| Tool | Purpose |
+|------|---------|
+| Wireshark 4.6.6 | Network packet capture and analysis |
+| Windows 11 | Analysis workstation |
+| Git | Version control |
+| GitHub | Project hosting and portfolio |
+| DNS | Domain name resolution analysis |
+| IPv4 | Network layer protocol analysis |
+| UDP | Transport layer protocol analysis |
+| Ethernet II | Data Link layer frame analysis |
 
 ---
+
+## 🔬 Methodology
+
+The analysis followed the following workflow:
+
+1. Capture live network traffic.
+2. Apply DNS display filter.
+3. Identify communication endpoints.
+4. Examine protocol hierarchy.
+5. Inspect packet headers.
+6. Analyze DNS queries and responses.
+7. Document observations.
+
+---
+## Analysis
 
 ## 1. DNS Traffic Filtering
 
@@ -299,34 +365,6 @@ DNS flags are essential for understanding how a DNS query was handled. They reve
 ![DNS Flags](screenshots/12_dns_flags.png)
 
 ---
-
-## Skills Demonstrated
-
-- Network Traffic Analysis
-- Packet Inspection
-- DNS Analysis
-- IPv4
-- UDP
-- Ethernet II
-- Wireshark
-- Network Troubleshooting
-- Technical Documentation
-
----
-
-## 🔬 Methodology
-
-The analysis followed the following workflow:
-
-1. Capture live network traffic.
-2. Apply DNS display filter.
-3. Identify communication endpoints.
-4. Examine protocol hierarchy.
-5. Inspect packet headers.
-6. Analyze DNS queries and responses.
-7. Document observations.
-
----
 ## MITRE ATT&CK Relevance
 
 Although this project analyzes legitimate DNS traffic, the same analysis techniques are commonly used to investigate:
@@ -338,14 +376,17 @@ Although this project analyzes legitimate DNS traffic, the same analysis techniq
 Understanding normal network behavior is essential for detecting malicious activity.
 
 ---
+## Skills Demonstrated
 
-## Key Findings
-
-The analysis confirmed normal DNS communication between the local workstation and the Cloudflare public DNS resolver.
-
-No suspicious traffic, protocol anomalies, or unexpected communication patterns were identified during the capture.
-
-The captured traffic demonstrates the complete DNS resolution process, including query generation, response processing, endpoint communication, and protocol encapsulation across the Ethernet, IPv4, UDP, and DNS layers.
+- Network Traffic Analysis
+- Packet Inspection
+- DNS Analysis
+- IPv4
+- UDP
+- Ethernet II
+- Wireshark
+- Network Troubleshooting
+- Technical Documentation
 
 ---
 
